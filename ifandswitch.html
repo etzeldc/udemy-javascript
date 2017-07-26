@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if and switch</title>
+</head>
+<body>
+    <p>speed on the motorway: <input id="speed" type="number"/><button onclick="checkSpeed()">check</button></p>
+    <script>
+        function checkSpeed() {
+            var speed = document.getElementById("speed").value;
+            if (speed > 70) {
+                window.alert("Speed has exceeded 70MPH, slow down.");
+            } else if (speed < 40) {
+                window.alert("too slow, man");
+            } else {
+                window.alert("Your speed is fine");
+            }
+        }
+        var speed = 30;
+    </script>
+</body>
+</html>
